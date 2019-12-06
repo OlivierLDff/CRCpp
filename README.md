@@ -1,4 +1,7 @@
 # CRC++
+
+*This fork aim is to provide CMake support and allow a simple FetchContent to add this library to your cmake project.*
+
 Easy to use and fast C++ CRC library.
 
 Tired of writing CRC code over and over again? Don't want to include a dozen boost header files just for a little bit of functionality? CRC++ is a portable and extremely lightweight alternative that is incredibly simple, fast, and clean.
@@ -169,6 +172,16 @@ Define to include definitions for little-used CRCs. Not defined by default.
 ### Documentation
 
 https://d-bahr.github.io/CRCpp/
+
+### CMake Configuration
+
+When using the cmake script, an interface library will be generated for easy integration with other cmake projects.
+
+* `CRCPP_TARGET`: Name of the target. *Default: CRCpp*
+* `CRCPP_USE_NAMESPACE`: Define to place all CRC++ code within the ::CRCPP namespace. *Default: ON.*
+* `CRCPP_USE_CPP11`: Define to enables C++11 features (move semantics, constexpr, static_assert, etc.).  *Default: ON.*
+* `CRCPP_BUILD_TESTS`: Build CRCpp test target (with name `CRCPP_TARGET`_Test). The test can be launch with `CTest -C Release`
+* `CRCPP_FOLDER_PREFIX`: Folder prefix of generated target, only decorative for IDEs.
 
 ### License
 

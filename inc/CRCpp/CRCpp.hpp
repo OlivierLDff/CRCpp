@@ -1,5 +1,5 @@
 /**
-    @file CRC.h
+    @file CRC.hpp
     @author Daniel Bahr
     @version 1.1.0.0
     @copyright
