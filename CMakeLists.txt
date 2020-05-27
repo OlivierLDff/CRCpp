@@ -37,7 +37,7 @@ message(STATUS "------ ${CRCPP_TARGET} End Configuration ------")
 # └──────────────────────────────────────────────────────────────────┘
 
 add_library(${CRCPP_TARGET} INTERFACE)
-target_sources(${CRCPP_TARGET} INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/inc/CRCpp/CRCpp.hpp")
+target_sources(${CRCPP_TARGET} INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/inc/CRCpp.hpp")
 
 if(CRCPP_USE_NAMESPACE)
     target_compile_definitions(${CRCPP_TARGET} INTERFACE -DCRCPP_USE_NAMESPACE)
